@@ -1,0 +1,25 @@
+{
+  "name": "agropulse-backend",
+  "version": "1.0.0",
+  "description": "AgroPulse IoT Simulator and Worker with Redpanda/Kafka and AgroMonitoring API",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start:simulator": "ts-node src/simulator.ts",
+    "start:worker": "ts-node src/worker.ts",
+    "start": "concurrently \"npm run start:simulator\" \"npm run start:worker\""
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "dotenv": "^16.4.7",
+    "kafkajs": "^2.2.4",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "@types/uuid": "^10.0.0",
+    "concurrently": "^9.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}

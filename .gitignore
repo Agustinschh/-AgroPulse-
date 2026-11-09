@@ -1,0 +1,82 @@
+# Dependencies
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+# Expo & React Native
+.expo/
+**/dist/
+**/web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+ios/
+android/
+
+# Metro & Bundler
+.metro-health-check*
+*.tsbuildinfo
+
+# Debug & Logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+pnpm-debug.log*
+*.log
+
+# IDEs & System files
+.DS_Store
+Thumbs.db
+.idea/
+**/.idea/
+.vscode/
+**/.vscode/
+*.pem
+
+# Environment variables
+.env
+.env*.local
+.env.local
+.env.production
+.env.development
+**/.env
+**/.env*.local
+**/.env.local
+!.env.example
+!**/.env.example
+
+# Docker / Local services
+.redpanda/
+docker-data/
+
+# Editor & Assistant caches
+.gemini/
+**/.gemini/
+.claude/
+**/.claude/
+.cursor/
+**/.cursor/
+.cursorrules
+**/.cursorrules
+.windsurf/
+**/.windsurf/
+.copilot/
+**/.copilot/
+.agents/
+**/.agents/
+.continue/
+**/.continue/
+.cline/
+**/.cline/
+.roo/
+**/.roo/
+aide/
+**/aide/
